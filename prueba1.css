@@ -36,8 +36,8 @@ button{
 .green{
     background-color: lightgreen;
 }
-.purple{
-    background-color: blueviolet;
+.lightspurple{
+    background-color: #9D9BB6;
 }
 
 header,
@@ -58,9 +58,9 @@ content{
     flex: 1;
     justify-content: center;
     flex-direction: row;
-    background-color: bisque;
+    background-color: white;
     width: auto;
-    height: 250px;
+    height: auto;
     border: 5px solid blue;
 }
 
@@ -74,8 +74,9 @@ footer button.blue{
     color: #000000;
     width: auto;
     height: 500px;
-    border: 5px solid blue;
+    border: 5px solid #D1B576;
     flex-direction: column;
+    align-items: center;
 }
 .message1{
     color: #000000;
@@ -83,6 +84,7 @@ footer button.blue{
     height: auto;
     border: 2.5px solid lightblue;
     text-align: start;
+    /* text-align: center; */
 }
 .message2{
     color: #000000;
@@ -90,6 +92,7 @@ footer button.blue{
     height:auto;
     border: 2.5px solid lightblue;
     text-align: end;
+    /* text-align: center; */
     
 }
 .message3{
@@ -98,4 +101,28 @@ footer button.blue{
     height: auto;
     border: 2.5px solid lightblue;
     text-align: start;
+    /* text-align: center; */
+}
+.right{
+    width: auto;
+    height: 500px;
+    background: white;
+    padding: 10px;
+    border:  2.5px solid #8093A1;
+    align-items: center;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+
+}
+
+.lightslategray{
+    flex: auto;
+    flex-basis: 5px;
+    color: white;
+    margin: auto;
+    height: auto;
+    background: lightblue;
+    text-align: center;
+   
 }
