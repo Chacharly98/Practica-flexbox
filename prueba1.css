@@ -78,7 +78,7 @@ footer button.blue{
     flex: 2;
 }
 .left{
-    width: 75%;
+    width: 65%;
     height: 100%;
     background: white;
     /* padding: 10px; */
@@ -117,7 +117,7 @@ footer button.blue{
     margin: 10px;
 }
 .right{
-    width: 25%;
+    width: 35%;
     height: 100%;
     background: white;
     padding: 10px;
