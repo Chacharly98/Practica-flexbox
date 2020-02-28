@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     padding: 1rem;
 }
-
+*,
 :after,
 :before{
     box-sizing: border-box;
@@ -41,14 +41,13 @@ button{
 }
 
 header,
-content,
 footer{
+    
     align-items: center;
     display: flex;
     height: auto;
-    padding: 0.5rem 0.75rem;
-    width: auto;
-
+    /* padding: 0.5rem 0.75rem; */
+    width: 100%;
 }
 
 header {
@@ -56,13 +55,20 @@ header {
 }
 
 content{
-    flex: auto;
-    justify-content: center;
-    flex-direction: row;
-    background-color: white;
-    width: auto;
+    flex: 1;
+    width: 100%;
     height: auto;
-    border: 5px solid blue;
+    background-color: white;
+    /* border: 2.5px solid blue; */
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
 footer button{
@@ -72,10 +78,14 @@ footer button.blue{
     flex: 2;
 }
 .left{
-    color: #000000;
-    width: 100%;
+    width: 75%;
     height: 100%;
-    border: 5px solid #D1B576;
+    background: white;
+    /* padding: 10px; */
+    border: 2.5px solid #D1B576;
+    /* display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -86,6 +96,7 @@ footer button.blue{
     border: 2.5px solid lightblue;
     text-align: start;
     /* text-align: center; */
+    margin: 10px;
 }
 .message2{
     color: #000000;
@@ -93,8 +104,8 @@ footer button.blue{
     height:auto;
     border: 2.5px solid lightblue;
     text-align: end;
-    /* text-align: center; */
-    
+    /* text-align: center;   */
+    margin: 10px;
 }
 .message3{
     color: #000000;
@@ -103,6 +114,7 @@ footer button.blue{
     border: 2.5px solid lightblue;
     text-align: start;
     /* text-align: center; */
+    margin: 10px;
 }
 .right{
     width: 25%;
@@ -111,6 +123,8 @@ footer button.blue{
     padding: 10px;
     border:  2.5px solid #8093A1;
     align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: center;
     justify-content: center;
@@ -121,8 +135,8 @@ footer button.blue{
     flex: auto;
     flex-basis: 5px;
     color: white;
-    margin: auto;
     height: auto;
+    width: auto;
     background: lightblue;
     text-align: center;
    
