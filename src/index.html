@@ -1,34 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sith Carlos Briones</title>
-    <link rel="stylesheet" type="text/css" href="prueba1.css">
-</head>
-<body>
-    <header>
-        <button class="lightspurple">logo</button>
-    
-    <div>
-        <button class="red">products</button>
-        <button class="blue">team</button>
-    </div>
+<html lang="es">
+  <head>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sith Carlos Briones</title>
+  </head>
+  <body class="w-full min-h-screen h-auto ">
+    <header class="w-full min-h-screen h-auto flex flex-col flex-no-wrap " style="background-image: url(assets/img/background.jpg);overflow:hidden;background-repeat: no-repeat;background-size: cover;" >
+      <div class="w-full h-16 flex flex-row flex-no-wrap justify-between ">
+        <picture class="h-full w-auto overflow-hidden">
+          <img src="assets/img/logo.jpg" >
+        </picture>
+        <nav class="text-white py-2 px-8 ">
+          <a class="text-lg mx-4">Home</a>
+          <a class="text-lg mx-4">About</a>
+          <a class="text-lg mx-4">Producto</a>
+          <a class="text-lg mx-4">Reviews</a>
+          <a class="text-lg mx-4">faqs</a>
+          <a class="text-lg mx-4">contact</a>
+        </nav>
+        <button class=" bg-white text-blue-400 rounded-full px-8 py-2">
+          Buy now
+        </button>
+      </div>
+      <div class="flex flex-row h-full w-auto px-6">
+        <div class="md:w-1/2 h-full">
+          <div class="text-left whitespace-pre-line ">
+            <h1 class="text-6xl text-white text-left font-bold leading-none ">
+              Best Landing Page For Online Product Marketing
+            </h1>
+            <p class="text-x2 text-white text-left ">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+              obcaecati hic consequuntur vitae fugit, assumenda cupiditate, ex
+              atque delectus, at recusandae? Harum quod blanditiis ipsum, fuga
+              laborum officiis quas ipsam.
+            </p>
+          </div>
+          <button class="bg-black text-white rounded-full py-2 px-4">Order Now</button>
+        </div>
+        <picture class="h-full w-auto  overflow-y-hidden px-6">
+          <img src="assets/img/watch.jpg">
+        </picture>
+      </div>
     </header>
-    <content>
-        <div class="left">
-            <div class="message1"><img src="imagen.jpg" width="75px" >Lisa: Hey, have to tried Flexbox? This is so much better than floats!</div>
-            <div class="message2">David: Hey, I've never triedit yet<img src="imagen.jpg" width="75px"></div>
-            <div class="message3"><img src="imagen.jpg" width="75px">Lisa: it's a real layout model, you can forget about clearfix an other hacks</div>
+
+    <about class="w-full min-h-screen h-auto py-16">
+      <div class=" h-auto flex flex-row flex-no-wrap">
+        <div class="w-1/2 h-full text-left px-6">
+          <h3 class="text-4xl text-indigo-500">
+            About The Watch
+          </h3>
+          <h2 class="text-5xl font-bold">
+            Best and Fashionable Smart Whatch For Easy Life
+          </h2>
+          <p class="text-xl text-gray-600 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            pellentesque justo id tempor venenatis. Vestibulum pulvinar metus
+            nec nisi pretium finibus. Proin nec elementum justo, eget porttitor
+            nibh. Nunc ut iaculis metus. Quisque tempus arcu sed volutpat mattis. 
+            Proin ultrices nibh id turpis eleifend, vel elementum sapien varius. 
+            Duis cursus viverra lacinia. Sed ornare risus sit amet erat iaculis semper.
+          </p>
+          <ul class="text-2xl list-inside list-disc ">
+            <li >Atractive Interface with many options</li>
+            <li>Live Chat and Instant Notification</li>
+            <li>Instant App with Unlimited Features</li>
+          </ul>
         </div>
-        <div class="right">
-            <button class="lightslategray">this box is perfectly centered</button>
+        <div class="w-1/2 px-6 ">
+          <picture class="h-12 overflow-hidden ">
+            <img src="assets/img/about-img.png" alt="">
+          </picture>
         </div>
-    </content>
-    <footer>
-        <button class="red">contact</button>
-        <button class="blue">careers</button>
-        <button class="green">about</button>
-    </footer>
-</body>
+      </div>
+    </about>
+
+    <about class="w-full min-h-screen h-auto py-16">
+      <div class="flex flex-col px-8 py-8 ">
+        <div class="flex flex-col flex items-center pt-8  ">
+          <h4 class="text-5xl font-bold  w-1/2 text-center pt-8">
+            Many Features Available in the Watch
+          </h4>
+          <p class="text-gray-500 text-lg w-1/3 text-center pt-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus pellentesque justo id tempor venenatis. Vestibulum
+            pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            justo, eget porttitor nibh. Nunc ut iaculis metus.
+            Quisque tempus arcu sed volutpat mattis.
+          </p>
+        </div>
+        <div class="flex flex-row flex-wrap px-8 py-8"> 
+          <div class="w-1/3 flex flex-col flex items-center pt-8">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md" >
+              <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h5 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h5>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+          <div class="w-1/3 flex flex-col flex items-center pt-8">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md">
+              <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h6 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h6>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+          <div class="w-1/3 flex flex-col flex items-center pt-8">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md">
+              <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h7 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h7>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+          <div class="w-1/3 flex flex-col flex items-center pt-8">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md">
+             <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h8 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h8>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+          <div class="w-1/3 flex flex-col flex items-center pt-8">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md">
+              <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h9 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h9>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+          <div class="w-1/3 flex flex-col flex items-center pt-8 ">
+            <picture class="h-10 w-10 rounded-full h-16 w-16 flex items-center justify-center  shadow-md">
+              <img src="assets/img/descarga.png" alt="">
+            </picture>
+            <h10 class="text-xl text-black font-bold text-center pt-8">
+              Instant App with Unlimited Features
+            </h10>
+            <p class="text-lg text-gray-500 text-center pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus pellentesque justo id tempor venenatis. Vestibulum
+              pulvinar metus nec nisi pretium finibus. Proin nec elementum
+            </p>
+          </div>
+        </div>
+      </div>
+    </about>
+  </body>
 </html>
