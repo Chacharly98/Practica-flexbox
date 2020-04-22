@@ -8,6 +8,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sith Carlos Briones</title>
+    <script>
+       function sumar() {
+
+
+var num1 = queHoraes()
+var num2 = 8
+
+suma = parseFloat(num1) + num2
+
+alert("la hora en India es: " +suma)
+
+}
+
+
+function queHoraes() {
+
+
+let nombre = prompt("Qué hora es en México?")
+console.log(nombre)
+
+return nombre
+}       
+    
+    </script>
   </head>
   <body class="w-full min-h-screen h-auto ">
     <header class="w-full min-h-screen h-auto flex flex-col flex-no-wrap " style="background-image: url(assets/img/background.jpg);overflow:hidden;background-repeat: no-repeat;background-size: cover;" >
@@ -23,8 +47,8 @@
           <a class="text-lg mx-4">faqs</a>
           <a class="text-lg mx-4">contact</a>
         </nav>
-        <button class=" bg-white text-blue-400 rounded-full px-8 py-2">
-          Buy now
+        <button class=" bg-white text-blue-400 rounded-full px-8 py-2" onclick="sumar()">
+          buy now
         </button>
       </div>
       <div class="flex flex-row h-full w-auto px-6">
@@ -40,7 +64,7 @@
               laborum officiis quas ipsam.
             </p>
           </div>
-          <button class="bg-black text-white rounded-full py-2 px-4">Order Now</button>
+          <button class="bg-black text-white rounded-full py-2 px-4" onclick="queHoraes()">Order Now</button>
         </div>
         <picture class="h-full w-auto  overflow-y-hidden px-6">
           <img src="assets/img/watch.jpg">
@@ -175,5 +199,31 @@
         </div>
       </div>
     </about>
+
+    <section class="flex flex-col h-auto pt-8">
+      <div class="flex flex-col py-2 px-8 flex items-center w-full h-auto bg-fixed pt-8" style="background-image: url(assets/img/video.jpg); overflow:hidden;background-repeat: no-repeat;background-size: cover;background-color: blue;">
+        <h11 class="text-5xl text-center text-white w-1/2 font-bold">
+          Product Demo video
+        </h11>
+        <p class="text-xl text-center text-white w-1/2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vivamus pellentesque justo id tempor venenatis. Vestibulum 
+          pulvinar metus nec nisi pretium finibus. Proin nec elementum justo, 
+          eget porttitor nibh. Nunc ut iaculis metus. Quisque tempus arcu sed volutpat mattis.
+        </p>
+
+      </div>
+      <div class="flex flex-col px-8 py-2 flex items-center pt-8">
+        <h12 class="text-5xl text-center text-indigo-900 w-1/2">
+          Outstanding Features of the product
+        </h12>
+        <p class="text-x1 text-center text-gray-500 w-1/2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vivamus pellentesque justo id tempor venenatis. Vestibulum pulvinar metus nec nisi pretium 
+          finibus. Proin nec elementum justo, eget porttitor nibh. Nunc ut iaculis metus. Quisque tempus 
+          arcu sed volutpat mattis.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
