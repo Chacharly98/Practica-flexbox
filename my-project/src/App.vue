@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <h1>proyecto Charly</h1>
+    <h1>Proyecto charly</h1>
     <input v-model="name" />
     <br />
     <br />
-    <label>{{ towLower }}</label>
+    <label>{{ toLower }}</label>
   </div>
 </template>
 
@@ -17,8 +17,8 @@ export default {
     };
   },
   computed: {
-    towLower() {
-      return this.name.towLower();
+    toLower() {
+      return this.name.toLowerCase();
     }
   }
 };
