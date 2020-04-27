@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Proyecto charly</h1>
+    <h1>¿Cúal es tu nombre?</h1>
     <input v-model="name" />
     <br />
     <br />
