@@ -1,26 +1,34 @@
 <template>
-  <div id="app"  >
-    <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold">Carrito de compras</h1>
-    <br />
-    <br />
-    <label class="italic font-serif text-4xl text-purple-900">Total de elementos: {{total_unidad}}</label>
-    <br />
-    <label class="italic font-serif text-4xl text-purple-900">Total: {{total_precio}}</label>
-    <br />
-    <br />
-    <input v-model="name" class="bg-purple-500 text-white rounded-full py-2 px-4" />
-    <br />
-    <br />
+  <div id="app" class="w-full min-h-screen h-auto px-8 py-2 flex flex-row" >
+    <div class="flex flex-row h-full w-auto px-6">
+      <picture class="h-full w-auto  overflow-y-hidden px-6">
+        <img src="/static/compras.png" />
+      </picture>
+    </div> 
+    <div> 
+      <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold"      >Carrito de compras</h1>
+      <br />
+      <br />
+    
+      <label class="italic font-serif text-4xl text-purple-900">Total de elementos: {{total_unidad}}</label>
+      <br />
+      <label class="italic font-serif text-4xl text-purple-900">Total: {{total_precio}}</label>
+      <br />
+      <br />
+      <input v-model="name" class="bg-purple-500 text-white rounded-full py-2 px-4" />
+      <br />
+      <br />
 
-    <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4" />
-    <br />
-    <br />
-    <button @click="agregar" class="rounded-full py-2 px-4 bg-purple-900 text-white">Agregar</button>
-    <br />
-    <br />
-    <label>{{toLower}}</label>
-    <br />
-    <br />
+      <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4" />
+      <br />
+      <br />
+      <button @click="agregar" class="rounded-full py-2 px-4 bg-purple-900 text-white">Agregar</button>
+      <br />
+      <br />
+      <label>{{toLower}}</label>
+      <br />
+      <br />
+    </div>  
   </div>
 </template>
 
@@ -59,7 +67,7 @@ export default {
     },
     toLower() {
       return this.name.toLowerCase();
-    },
+    }
   }
 };
 </script>
