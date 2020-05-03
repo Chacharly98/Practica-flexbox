@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold">Carrito de compras </h1>
+  <div id="app"  >
+    <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold">Carrito de compras</h1>
     <br />
     <br />
     <label class="italic font-serif text-4xl text-purple-900">Total de elementos: {{total_unidad}}</label>
@@ -11,13 +11,16 @@
     <input v-model="name" class="bg-purple-500 text-white rounded-full py-2 px-4" />
     <br />
     <br />
-    <label>{{toLower}}</label>
-    <br />
-    <br />
+
     <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4" />
     <br />
     <br />
     <button @click="agregar" class="rounded-full py-2 px-4 bg-purple-900 text-white">Agregar</button>
+    <br />
+    <br />
+    <label>{{toLower}}</label>
+    <br />
+    <br />
   </div>
 </template>
 
@@ -47,16 +50,16 @@ export default {
     total_unidad() {
       return this.cart.length;
     },
-    toLower() {
-      return this.name.toLowerCase();
-    },
     total_precio() {
       let total = 0;
       for (const item of this.cart) {
         total += parseFloat(item.price);
       }
       return total;
-    }
+    },
+    toLower() {
+      return this.name.toLowerCase();
+    },
   }
 };
 </script>
