@@ -1,32 +1,26 @@
 <template>
-  <div id="app" class="w-full min-h-screen h-auto px-8 py-2 flex flex-row">
-      <picture class="h-full w-auto overflow-y-hidden px-6">
-        <img src="/static/compras.png" />
-      </picture>
-    <body>
-      <h1
-        class="italic font-serif text-6xl text-center text-purple-900 font-bold"
-      >Carrito de compras</h1>
-      <br />
-      <br />
-      <label class="italic font-serif text-4xl text-purple-900">Total de elementos: {{total_unidad}}</label>
-      <br />
-      <label class="italic font-serif text-4xl text-purple-900">Total: {{total_precio}}</label>
-      <br />
-      <br />
-      <input v-model="name" class="bg-purple-500 text-white rounded-full py-2 px-4" />
-      <br />
-      <br />
-      <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4" />
-      <br />
-      <br />
-      <button type="submit" @click="agregar" class="rounded-full py-2 px-4 bg-purple-900 text-white">Agregar</button>
-      
-    </body>
+  <div id="app" class="w-auto min-h-screen h-full flex px-6">
+    <div class="w-1/2 min-h-screen p-4 h-full">
+        <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold">Carrito de compras</h1>
+        <input v-model="name" placeholder="producto" class="bg-purple-500 text-white rounded-full py-2 px-4" />
+        <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4" />
+      <span v-if="'' != name && price > 0" class="inline-flex rounded-md shadow-sm mt-6">
+        <button  @click="agregar" class="inline-flex rounded-full py-2 px-4 bg-purple-900 text-white">Agregar</button>
+      </span>  
+      <span v-else>
+        <p class="text-xs mt-4 text-red-400">Escribir nombre y precio del producto</p>
+      </span>
+        <picture class="h-full w-auto overflow-hidden px-6">
+          <img src="/static/compras.png" />
+        </picture>  
+    </div>
+    <lista :cart="cart" />
   </div>
 </template>
 
 <script>
+import lista from "./components/lista"
+
 export default {
   name: "App",
   data() {
@@ -48,20 +42,9 @@ export default {
       console.log(this.cart);
     },
   },
-
-  computed: {
-    total_unidad() {
-      return this.cart.length;
-    },
-    total_precio() {
-      let total = 0;
-      for (const item of this.cart) {
-        total += parseFloat(item.price);
-      }
-      return total;
-    },
-  },
-  
+  components: {
+    lista
+  }  
 };
 </script>
 
