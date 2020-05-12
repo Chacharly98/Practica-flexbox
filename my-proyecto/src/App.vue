@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="w-auto min-h-screen h-full flex px-6 ">
+  <div id="app" class="w-auto min-h-screen h-full flex px-6 overflow-hidden h-32">
     <div class="w-1/2 min-h-screen p-4 h-full ">
-        <h1 class="italic font-serif text-6xl text-center text-purple-900 font-bold">Carrito de compras</h1>
+        <h1 class="italic font-serif text-5xl text-center text-purple-900 font-bold">Carrito de compras</h1>
         <input v-model="name" placeholder="producto" class="bg-purple-500 text-white rounded-full py-2 px-4" />
         <input v-model="price" class="bg-purple-500 text-white rounded-full py-2 px-4 " />
       <span v-if="'' != name && price > 0" class="inline-flex rounded-md shadow-sm mt-6">
@@ -10,8 +10,8 @@
       <span v-else>
         <p class="text-xs mt-4 text-red-400">Escribir nombre y precio del producto</p>
       </span>
-        <picture class="h-full w-auto overflow-hidden px-6">
-          <img src="/static/compras.png" />
+        <picture class="h-full w-auto overflow-hidden  flex justify-center ">
+          <img src="/static/carros.jpg" width="500" height="500"/>
         </picture>  
     </div>
     <lista :cart="cart" />
