@@ -1,5 +1,5 @@
 <template>
-  <div id="lista" class="w-1/2 min-h-screen h-full flex flex-col p-4">
+  <div id="lista" class="w-1/2 min-h-screen h-full flex flex-col p-4 ">
     <div class="w-full h-auto">
       <p class="text-3xl text-purple-900 font-bold">
         Total de elementos
